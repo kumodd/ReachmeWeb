@@ -4,7 +4,7 @@
  * Edit the values below once. The page reads them for every app, WhatsApp,
  * and contact link, so you do not need to edit the HTML for those details.
  */
-window.MYREACH_CONFIG = {
+const MYREACH_CONFIG = {
   // Place the APK in this path. Paths are relative to index.html.
   appLink: 'assets/myreach-tv.apk',
   appFileName: 'myreach-tv.apk',
@@ -22,3 +22,5 @@ window.MYREACH_CONFIG = {
   contactName: 'MyReach team',
   contactAvailability: 'Usually replies within a few hours'
 };
+
+export default MYREACH_CONFIG;

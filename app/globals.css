@@ -1,0 +1,13 @@
+@import url('../styles.css');
+
+.legal-page { background: var(--paper); min-height: 70vh; padding: 120px 0; }
+.legal-page .legal-inner { max-width: 790px; }
+.legal-page h1 { font-size: clamp(55px, 7vw, 95px); margin: 22px 0 30px; }
+.legal-page h2 { font-size: 34px; margin: 46px 0 14px; }
+.legal-page p, .legal-page li { color: var(--ink-soft); font-size: 15px; line-height: 1.8; }
+.legal-page ul { padding-left: 22px; }
+.legal-meta { color: var(--coral); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.route-hero { background: var(--paper-deep); padding: 110px 0 90px; }
+.route-hero h1 { font-size: clamp(60px, 7vw, 96px); margin: 22px 0 0; }
+.route-hero h1 em { color: var(--coral); }
+.footer-bottom a + a { margin-left: 18px; }
