@@ -11,3 +11,77 @@
 .route-hero h1 { font-size: clamp(60px, 7vw, 96px); margin: 22px 0 0; }
 .route-hero h1 em { color: var(--coral); }
 .footer-bottom a + a { margin-left: 18px; }
+
+/* Responsive polish and interaction defaults */
+html { overflow-x: hidden; }
+body { min-width: 320px; overflow-x: hidden; }
+a, button, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; }
+button, .button { min-height: 44px; }
+svg { max-width: 100%; }
+
+@media (min-width: 901px) and (max-width: 1120px) {
+  .container { width: min(100% - 56px, 1020px); }
+  .desktop-nav { gap: 17px; }
+  .desktop-nav a { font-size: 10px; }
+  .nav-cta { padding-inline: 14px; font-size: 10px; }
+  .hero-grid { gap: 18px; }
+  .hero-copy { position: relative; z-index: 2; }
+  .hero-visual { transform: scale(.84); transform-origin: center right; margin-left: -35px; }
+  .owner-grid, .advertiser-grid { gap: 52px; }
+  .guardrail-grid { gap: 55px; }
+  .principle-grid { grid-template-columns: 90px 1fr .85fr; gap: 28px; }
+  .contact-grid { gap: 55px; }
+}
+
+@media (max-width: 900px) {
+  .container { width: min(100% - 44px, 700px); }
+  .site-header { height: 74px; }
+  .mobile-nav { top: 74px; max-height: calc(100dvh - 74px); overflow-y: auto; }
+  .mobile-nav a { min-height: 48px; display: flex; align-items: center; }
+  .nav-wrap { gap: 18px; }
+  .hero-copy { max-width: 640px; }
+  .hero-description, .intro-content > p, .owner-copy > p, .guardrail-copy > p, .advertiser-copy > p, .network-copy > p, .contact-copy > p { max-width: 620px; }
+  .owner-benefits > div { min-height: 38px; }
+  .contact-form { transform: none; }
+  .legal-page { padding: 88px 0; }
+  .route-hero { padding: 86px 0 68px; }
+}
+
+@media (max-width: 600px) {
+  .container { width: calc(100% - 36px); }
+  .section-pad { padding: 72px 0; }
+  .site-header { height: 68px; }
+  .mobile-nav { top: 68px; }
+  .brand { font-size: 19px; }
+  .hero { padding-top: 58px; padding-bottom: 76px; }
+  .hero h1 { font-size: clamp(54px, 16vw, 72px); }
+  .hero-lede { font-size: clamp(29px, 9vw, 38px); }
+  .hero-description { font-size: 14px; line-height: 1.65; }
+  .hero-visual { width: calc(100% / .67); max-width: none; }
+  .button { width: 100%; }
+  .hero-actions .text-link { margin-left: 2px; }
+  .section-label { font-size: 9px; }
+  .section-heading { margin-bottom: 42px; }
+  .section-stamp { font-size: 8px; }
+  .intro-content h2, .owner-copy h2, .guardrail-copy h2, .advertiser-copy h2, .network-copy h2, .contact-copy h2 { font-size: clamp(43px, 13vw, 56px); }
+  .fifty-card { transform: none; box-shadow: 7px 9px 0 var(--coral); }
+  .split-bar { height: 78px; line-height: 78px; }
+  .owner-benefits { margin-top: 62px; }
+  .guardrail-art { transform: scale(.86); margin-inline: -35px; }
+  .category { padding: 9px 11px; }
+  .principle-mark { margin-bottom: 4px; }
+  .place-card { transform: rotate(2deg); }
+  .advertiser-art { transform: rotate(-2deg) scale(.93); }
+  .network-map { margin-inline: -4px; }
+  .contact-form { padding: 26px 20px 23px; }
+  .form-row input, .form-row select, .form-row textarea { font-size: 16px; }
+  .contact-direct { min-height: 62px; }
+  .final-cta h2 { font-size: clamp(50px, 15vw, 66px); }
+  .final-actions { gap: 18px; }
+  .footer-bottom { align-items: flex-start; }
+  .footer-bottom a + a { margin-left: 0; }
+  .legal-page h1, .route-hero h1 { font-size: clamp(54px, 16vw, 76px); }
+  .legal-page h2 { font-size: 29px; margin-top: 38px; }
+  .legal-page p, .legal-page li { font-size: 14px; line-height: 1.75; }
+}
